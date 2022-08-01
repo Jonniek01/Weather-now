@@ -3,12 +3,16 @@ body {
     font-family: 'Rubik', sans-serif;
     background: #111;
 }
-*{
+
+* {
     box-sizing: border-box;
 }
-h1, h3 {
+
+h1,
+h3 {
     font-weight: 400;
 }
+
 .weather-app {
     min-height: 100vh;
     background-image: url(
@@ -23,6 +27,8 @@ h1, h3 {
     opacity: 1;/* Change to '0' 
     once the whole app is finished */
 }
+
+
 /* Add background overlay */
 .weather-app::before {
     content: "";
@@ -120,4 +126,76 @@ h1, h3 {
     border-bottom: 1px #ccc solid;
     padding: 0 1em 0.5em 0;
     width: 80%;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+
+.search:focus {
+    outline: none;
+}
+
+
+.search::placeholder { 
+    color: #ccc;
+}
+
+
+.pane1 ul {
+    padding: 0 0 1em 0;
+    margin: 2em 0;
+    border-bottom: 1px #ccc solid;
+
+}
+
+
+.pane1 ul li {
+    color: #ccc;
+    margin: 2.5em 0;
+}
+
+
+.pane1 ul h4 {
+    margin: 3em 0;
+
+}
+
+
+.city {
+    display: block;
+    cursor: pointer;
+}
+
+
+.city:hover {
+    color: #fff;
+}
+
+.details li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Responsive design */
+
+@media screen and (max-width:800px) { 
+    .pane1, .container {
+        position: relative;
+        width: 100%;
+        top: initial;
+    }
+}
+
+
+@media screen and (max-width:500px) { 
+    html {
+    font-size: 12px;
+    }
+}
+
+@media screen and (max-width:300px) { 
+    .weather-app {
+        min-height: 40em;
+    }
 }
