@@ -81,7 +81,7 @@ h3 {
     margin: 0.5em 0;
 }
 
-.pane1 {
+.panel {
     position: absolute;
     width: 40%;
     height: 100%;
@@ -101,7 +101,7 @@ h3 {
      padding: 3em 2em;
      overflow-y: scroll;
 }
-.pane1 form {
+.panel form {
     margin-bottom: 3em;
 }
 .submit {
@@ -141,7 +141,7 @@ h3 {
 }
 
 
-.pane1 ul {
+.panel ul {
     padding: 0 0 1em 0;
     margin: 2em 0;
     border-bottom: 1px #ccc solid;
@@ -149,13 +149,13 @@ h3 {
 }
 
 
-.pane1 ul li {
+.panel ul li {
     color: #ccc;
     margin: 2.5em 0;
 }
 
 
-.pane1 ul h4 {
+.panel ul h4 {
     margin: 3em 0;
 
 }
@@ -180,7 +180,7 @@ h3 {
 /* Responsive design */
 
 @media screen and (max-width:800px) { 
-    .pane1, .container {
+    .panel, .container {
         position: relative;
         width: 100%;
         top: initial;
